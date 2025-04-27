@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rap In-Verse - Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="contenido_contacto">
+        <div class="encabezado">
+            <h1>Formulario de contacto</h1>
+            <img src="media/rap_in-verse_large.PNG" alt="rap_in-verse_large" class="logo-largo">
+            <p>Puede contactar con nosotros si tiene alguna sugerencia</p>
+        </div>
+
+        <section class="informacion_contacto">
+            <form method="post" action="registrar.php">
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre: </label>    
+                <input type="text" name="nombre" placeholder="Ingrese su nombre..." id="nombre" required />
+                <br>
+                <label for="nombre">Correo electrónico: </label>
+                <input type="email" name="email" placeholder="Ingrese su e-mail..." id="email" required />
+                <br>
+                <label for="pais">¿Desde qué país nos sigues?<br>
+                    <select name="pais" id="pais">
+                        <optgroup label="Europa">
+                            <option value="españa">España</option>
+                            <option value="portugal">Portugal</option>
+                            <option value="francia">Francia</option>
+                            <option value="italia">Italia</option>
+                            <option value="reino-unido">Reino Unido</option>
+                            <option value="alemania">Alemania</option>
+                            <option value="holanda">Países Bajos</option>
+                            <option value="belgica">Bélgica</option>
+                            <option value="grecia">Grecia</option>
+                            <option value="suiza">Suiza</option>
+                        </optgroup>
+                        <optgroup label="América">
+                            <option value="estados-unidos">Estados Unidos</option>
+                            <option value="canada">Canadá</option>
+                            <option value="mexico">México</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="brasil">Brasil</option>
+                            <option value="chile">Chile</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="peru">Perú</option>
+                            <option value="venezuela">Venezuela</option>
+                            <option value="ecuador">Ecuador</option>
+                        </optgroup>
+                        <optgroup label="Asia">
+                            <option value="china">China</option>
+                            <option value="india">India</option>
+                            <option value="japon">Japón</option>
+                            <option value="corea-del-sur">Corea del Sur</option>
+                            <option value="indonesia">Indonesia</option>
+                            <option value="turquia">Turquía</option>
+                            <option value="tailandia">Tailandia</option>
+                            <option value="rusia">Rusia</option>
+                        </optgroup>
+                        <optgroup label="África">
+                            <option value="egipto">Egipto</option>
+                            <option value="sudafrica">Sudáfrica</option>
+                            <option value="nigeria">Nigeria</option>
+                            <option value="kenia">Kenia</option>
+                            <option value="argelia">Argelia</option>
+                            <option value="marruecos">Marruecos</option>
+                        </optgroup>
+                        <optgroup label="Oceanía">
+                            <option value="australia">Australia</option>
+                            <option value="nueva-zelanda">Nueva Zelanda</option>
+                        </optgroup>
+                    </select>                    
+                <br>
+                <label for="comentarios">Comentario:</label>
+                    <textarea name="comentarios" id="comentarios" cols="40" rows="4" placeholder="Escriba aquí su duda o sugerencia..."></textarea>
+                <br>
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Borrar" />
+            </form>
+        </section>
+
+        <div class="boton_inicio">
+            <a href="index.html">
+                <button type="button" class="boton_volver">Volver a la Página de Inicio</button>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="pie">
+        <p>&copy; 2025 Rap In-Verse. Proyecto realizado por Jose Moreno Fernández - 1º CFGS.</p>
+    </div>
+
+</body>
+</html>
